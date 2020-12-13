@@ -1,0 +1,301 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/*background-color: #f6f7f9;*/
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cite {
+	width: 1200px;
+	position: relative;
+}
+
+.header {
+	width: 100%;
+	padding: 50px 100px 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	margin-right: 50px;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.phone {
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.order {
+	font-size: 16px;
+	padding: 10px 50px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid gray;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.section-1 {
+	display: flex;
+	justify-content: space-between;
+
+}
+.section-2{
+	margin: 100px 100px;
+}
+.section-1 p{
+	margin-bottom: 30px;
+}
+
+.left {
+	width: 50%;
+	padding-left: 100px;
+	margin: 100px 0;
+
+}
+.left button{
+  color: aliceblue;
+  background-color: rgb(63, 42, 255);
+}
+
+.right {
+	width: 50%;
+}
+
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.text {
+	font-size: 20px;
+}
+
+
+button:hover {
+	box-shadow: 0 0 5px gray;
+}
+.examles{
+
+	margin: 0 100px;
+}
+
+.two {
+	display: flex; 
+	justify-content: space-between;
+}
+h2{
+	margin-top: 50px;
+	margin-bottom: 40px;
+	 font-size: 25px;
+
+}
+.examles1{
+	display: flex;
+	justify-content: space-between;
+
+}
+.text-frontend{
+  text-decoration: line-through;
+}
+.text-frontend:hover{
+  text-decoration: none;
+}
+/*КОММЕНТ*/
+
+.examles1 img{
+  margin: 10px 0;
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+.conteiner-image{
+  text-align: center;
+}
+.examles1 p{
+  text-indent: 20px;
+  font-size: 20px;
+}
+.examles h2{
+	margin-bottom: 0px;
+}
+#button3{
+	margin: 50px 0;
+	
+}
+section.footter{
+	margin: 50px 50px 0 100px;
+	width: 1000px;
+	background-color: rgb(63, 42, 255) ;
+	color:  rgb(235, 235, 255) ;
+	display: flex;
+	flex-direction: row;
+	padding: 0 50px 50px 50px;
+}
+.footter h2{
+	padding-bottom: 40px;
+}
+.footter div{
+	flex: 1;
+}
+
+
+
+footer{
+	margin: 20px 100px 0 100px;
+	padding: 20px 20px 0 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	font-weight: bold;
+	font-size: 20px;
+}
+footer p{
+	margin-bottom: 20px;
+}
+
+footer a {
+	margin-right: 50px;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+.foot1{
+	margin-left: 40px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+.foot2{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+.foot3{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+
+	align-items: flex-end;
+}
+#footer_button{
+	max-width: 250px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+.icon{
+	width: 20px;
+	height: 20px;
+	margin: 0 10px 0 10px;
+}
+
+
+/*Всплявающее окно POPUP*/
+
+
+#popup-bacground{
+	display: none;
+	position: fixed;
+  top: 0;
+  left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .6);
+
+	z-index: 24652;
+	justify-content: center;
+  align-items: center;
+}
+#popup{
+  padding: 20px;
+	height: 400px;
+  width: 400px;
+  border-radius: 20px;
+	background-color: rgb(0, 0, 0);
+  opacity: .8;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  justify-content: right;
+}
+
+.close{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+.popup-container{
+
+  color: aliceblue;
+  top: 20px; 
+}
+.popup-container h2{
+  margin: 0 0 20px 0;
+}
+.popup-container p{
+  margin:  0 0 30px 0;
+}
+.form-container{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+
+}
+.form-container input{
+  margin:  0 0 20px 0;
+}
+.form-container div{
+  flex-basis: 150px;
+}
+input[type = "tel"], input[type = "text"]{
+  height: 25px;
+  outline: none;
+}
+input[type = "submit"]{
+  height: 30px;
+  width: 150px;
+  background-color: blue;
+  outline: none;
+  border: none;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 10px;
+}
+input[type = "submit"]:active{
+  box-shadow: 0 0 10px white;
+
+}
+#popup-form{
+  margin-left: 20px;
+}

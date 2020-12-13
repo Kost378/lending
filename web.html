@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>Константин Корнеев -- Персональная страница</title>
+	<link href="web.css" rel="stylesheet">
+
+</head>
+<body>
+	<main class="cite">
+			<header class="header">
+					<nav>
+						<a href="#services_h2">Услуги</a>
+						<a href="#examples_h2">Портфолио</a>
+						<a href="#cost">Стоимость</a>
+					</nav>
+					<div>
+							<span class="phone">+7 (905) 927-74-68</span>
+							<button class="order">Заказать звонок</button>
+					</div>
+			</header>
+			<section class="section-1">
+					<div class="left">
+							<h1>Корнеев Константин</h1>
+							<p class="text">Начинающий frontend-разработчик и<br>веб-верстальщик</p>
+							<button class="order">Узнать больше</button>
+					</div>
+					<div class="right">
+							<img src="./man.png" alt="Это человек" width="500">
+					</div>
+			</section>
+			<section class="section-2">
+					<h2 id="services_h2">Что я делаю:</h2>
+					<div class="two">
+							<div>
+									<img src="icon/1.png" alt="Верстка" width="120">
+									<p style="margin: 30px 0 50px;">Верстка лендинг-страниц <br>
+									и сайтов <span class="text-frontend">любой сложности</span></p>
+							</div>
+							<div>
+									<img src="icon/2.png" alt="Адаптив" width="120">
+									<p style="margin: 30px 0 50px;">Адаптивная верстка под <br>
+									<span class="text-frontend">все</span> браузеры и устройства</p>
+							</div>
+							<div>
+									<img src="icon/3.png" alt="Frontend" width="120">
+									<p style="margin: 30px 0 50px;" class="text-frontend">Frontend-разработка <br>
+									и программирование</p>
+							</div>
+							<div>
+									<img src="icon/4.png" alt="Исправление" width="120">
+									<p style="margin: 30px 0 50px;" >Исправление и доработка <br>
+									существующей верстки</p>
+							</div>
+					</div>
+					<button class="order">Узнать стоимость</button>
+			</section>
+			<section class="examles">
+				<h2 id="examples_h2">Примеры работ</h2><br>
+				<div class="examles1">
+				<div class="conteiner-image"> <a href="../templateCSS/templateCSS.html"> <img src="portf/1.jpeg" alt="Сайт1"></a><br> <p>Тестовый сайт</p></div>
+				<div class="conteiner-image"> <a href="../template2/template2.html"> <img src="portf/2.jpeg" alt="Сайт2"></a><br> <p>Лэндинг</p></div>
+				<div class="conteiner-image"> <a href="../euphoria/euphoria.html"> <img src="portf/3.jpeg" alt="Сайт3"></a><br> <p>EUPHORIA</p></div>
+				</div>
+				<button class="order" id="button3">Заказать проект</button>
+			</section>
+			<section class="footter">
+				<div>
+				<h2 id="cost">Адаптивная верстка под все устройства и браузеры<br>от 1000 Р всего за 4 часа.*</h2>
+				<p>*Срок и стоимость могут отличаться от заявленных и рассчитываются
+					индвидуально, в зависимости от сложности задач</p>
+			</div>
+				<div>
+
+				</div>		
+			</section>
+
+			<footer> 
+				<div class="foot1">
+					<p> <a href="#services_h2">Услуги</a></p>
+					<p> <a href="#examples_h2">Портфолио</a></p>
+					<p> <a href="#cost">Стоимость</a></p>
+				</div>
+				<div class="foot2">
+				<p>kost97@inbox.ru</p>
+				<p>7 (905) 927-74-68</p>
+				</div>
+				<div class="foot3">
+					<button id="footer_button" class="order">Заказать звонок</button>
+					<div class="icons">
+						<img class = "icon" src="soc/fb.png" alt="Facebook">
+						<img class = "icon" src="soc/vk.png" alt="Вконтакте">
+						<img class = "icon" src="soc/you.png" alt="YouTube">
+						<img class = "icon" src="soc/telegram.png" alt="Telegram">
+						<img class = "icon" src="soc/inst.png" alt="Instagram">
+					</div>
+				</div>
+				<div>
+					
+				</div>
+			</footer>
+
+			<div class="popup-container" id="popup-bacground">
+				<div class="popup" id="popup">
+						<img class = "close" src = "icon/close.png" width="28" height="40" alt="close">
+						<div class="popup-container">
+							<h2>Свяжитесь со мной</h2>
+							<p>Константин Корнеев</p>
+							<p>Тел.: +7 (905) 927-74-68</p>
+							<p>E-mail: kost97@inbox.ru</p>
+							<h2>или закажите звонок</h2>
+							<div class="form-container">
+							<div ><p>Ваше имя</p>
+							    	<p>Ваш телефон</p>
+							</div>
+							<form id="popup-form" action="" method="">
+								<input type="text" placeholder="Имя" id="name" required><br>
+								<input type="tel" placeholder="Телефон" id="tel" required>
+								<input type="submit" value="Заказать звонок" class="send">
+							</form>
+						</div>
+						</div>
+				</div>
+				
+			</div>
+			
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	crossorigin="anonymous"></script>
+	<script src="web.js"></script>
+</body>
+</html>
